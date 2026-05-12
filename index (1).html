@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хидоятов Жасур — Business Consultant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <!-- Scroll progress -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Top Nav -->
+    <nav class="topnav" id="topnav">
+        <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav_profile">Профиль</a></li>
+            <li><a href="#experience" data-i18n="nav_experience">Опыт</a></li>
+            <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
+            <li><a href="#community" data-i18n="nav_community">Сообщество</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Контакты</a></li>
+        </ul>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+            <button class="lang-current" id="langCurrent">
+        <img src="https://flagcdn.com/w40/ru.png" alt="RU" class="flag-icon">
+        <span>RU</span>
+      </button>
+            <div class="lang-dropdown">
+                <div class="lang-option" onclick="changeLang('ru')">
+                    <img src="https://flagcdn.com/w40/ru.png" alt="RU">
+                    <span>Русский</span>
+                </div>
+                <div class="lang-option" onclick="changeLang('uz')">
+                    <img src="https://flagcdn.com/w40/uz.png" alt="UZ">
+                    <span>O'zbekcha</span>
+                </div>
+                <div class="lang-option" onclick="changeLang('en')">
+                    <img src="https://flagcdn.com/w40/us.png" alt="EN">
+                    <span>English</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+
+        <div class="hero-left">
+            <div class="hero-tag" data-i18n="hero_tag">CEO | COO | Business Strategist</div>
+            <h1 class="hero-name">
+                <span data-i18n="hero_name_1">Hidoyatov Jasur</span>
+                <span class="hero-surname" data-i18n="hero_name_2"></span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Развиваю бизнес. Оптимизирую будущее.</p>
+            <p class="hero-desc" data-i18n="hero_desc">
+                Operatsion direktor COO и CEO с опытом масштабирования компаний до 36%. Специализируюсь на создании систем управления, автоматизации процессов и развитии корпоративной культуры.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary"><span data-i18n="hero_btn_1">Начать сотрудничество</span></a>
+                <a href="#experience" class="btn-outline" data-i18n="hero_btn_2">Опыт работы</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ═══ STATS ═══ -->
+    <div class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item reveal">
+                <div class="stat-num">7<span>+</span></div>
+                <div class="stat-lbl" data-i18n="stat_1">Лет опыта</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-1">
+                <div class="stat-num">14<span>+</span></div>
+                <div class="stat-lbl" data-i18n="stat_2">Проектов</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-2">
+                <div class="stat-num">5<span>+</span></div>
+                <div class="stat-lbl" data-i18n="stat_3">Партнёров</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-3">
+                <div class="stat-num">400<span>+</span></div>
+                <div class="stat-lbl" data-i18n="stat_4">Сотрудников</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="section" id="about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <div class="section-label" data-i18n="about_label">Профиль</div>
+                    <h2 class="section-title" data-i18n="about_title">Личные данные и <em>образование</em></h2>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-label" data-i18n="info_1_lbl">Дата рождения</div>
+                            <div class="info-val" data-i18n="info_1_val">18 декабря 1998 (27 лет)</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label" data-i18n="info_2_lbl">Гражданство</div>
+                            <div class="info-val" data-i18n="info_2_val">Узбекистан (Разрешение: RU, USA)</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label" data-i18n="info_3_lbl">Локация</div>
+                            <div class="info-val" data-i18n="info_3_val">Ташкент (SAMPI Mall)</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label" data-i18n="info_4_lbl">Дополнительно</div>
+                            <div class="info-val" data-i18n="info_4_val">Своё авто, права кат. B</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label" data-i18n="info_5_lbl">Статус</div>
+                            <div class="info-val" data-i18n="info_5_val">Полная занятость, Гибрид</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label" data-i18n="info_6_lbl">Желаемая позиция</div>
+                            <div class="info-val" data-i18n="info_6_val">Operatsion direktor COO</div>
+                        </div>
+                    </div>
+
+                    <div class="section-label" style="margin-top:40px;" data-i18n="edu_label">Образование</div>
+                    <div class="timeline" style="margin-bottom:0;">
+                        <div class="timeline-item" style="margin-bottom:30px;">
+                            <div class="tm-date">2021</div>
+                            <div class="tm-company" data-i18n="edu_1_inst">ГКУз (GKUz)</div>
+                            <div class="tm-role" data-i18n="edu_1_role">Бакалавр, Классическая музыка, оркестрант</div>
+                        </div>
+                        <div class="timeline-item" style="margin-bottom:30px;">
+                            <div class="tm-date">2017</div>
+                            <div class="tm-company" data-i18n="edu_2_inst">Лицей им. Успенского</div>
+                            <div class="tm-role" data-i18n="edu_2_role">Среднее специальное образование</div>
+                        </div>
+                        <div class="timeline-item" style="margin-bottom:30px;">
+                            <div class="tm-date">2015</div>
+                            <div class="tm-company" data-i18n="edu_3_inst">Школа им. Успенского</div>
+                            <div class="tm-role" data-i18n="edu_3_role">Среднее образование</div>
+                        </div>
+                    </div>
+
+                    <div class="section-label" style="margin-top:20px;" data-i18n="lang_label">Языки</div>
+                    <div class="lang-grid">
+                        <div class="lang-tag"><span data-i18n="lang_1">Uzbek</span> <span class="lang-level" data-i18n="lang_1_lvl">Native</span></div>
+                        <div class="lang-tag"><span data-i18n="lang_2">Russian</span> <span class="lang-level" data-i18n="lang_2_lvl">C2</span></div>
+                        <div class="lang-tag"><span data-i18n="lang_3">English</span> <span class="lang-level" data-i18n="lang_3_lvl">B2</span></div>
+                    </div>
+                </div>
+                <div class="values-grid reveal reveal-delay-1">
+                    <div class="value-card">
+                        <div class="value-num">01</div>
+                        <div class="value-title" data-i18n="val_1_title">Аудит & Диагностика</div>
+                        <div class="value-desc" data-i18n="val_1_desc">Выявляю точки роста в бизнесе и устраняю неполадки в системе управления (HRM, Бизнес процессы, Финансовая часть)
+                        </div>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-num">02</div>
+                        <div class="value-title" data-i18n="val_2_title">Оптимизация бизнеес процессов, и автоматизация с помощью ИИ
+                        </div>
+                        <div class="value-desc" data-i18n="val_2_desc">Автоматизирую процессы с помощью современных AI-инструментов
+                        </div>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-num">03</div>
+                        <div class="value-title" data-i18n="val_3_title">Дашборды & Контроль</div>
+                        <div class="value-desc" data-i18n="val_3_desc">Создаю прозрачные системы отслеживания KPI для каждого отдела
+                        </div>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-num">04</div>
+                        <div class="value-title" data-i18n="val_4_title">Создание команды/Развитие команды</div>
+                        <div class="value-desc" data-i18n="val_4_desc">Повышаю синхронность целей компании и команды от CEO до линейного персонала</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+    <section class="section" id="experience" style="background:var(--ivory);">
+        <div class="section-inner">
+            <div class="reveal">
+                <div class="section-label" data-i18n="exp_label">Опыт работы</div>
+                <h2 class="section-title" data-i18n="exp_title">Профессиональный <em>путь</em></h2>
+            </div>
+
+            <div class="timeline reveal reveal-delay-1">
+                <div class="timeline-item">
+                    <div class="tm-content">
+                        <div class="tm-date" data-i18n="exp_1_date">Март 2025 — Апрель 2026</div>
+                        <div class="tm-company">ONUR</div>
+                        <div class="tm-role" data-i18n="exp_1_role">HRD / COO</div>
+                        <div class="tm-desc" data-i18n="exp_1_desc">
+                            <p>Оптимизация бизнес-процессов и улучшение корпоративной культуры. Рост прибыли компании на 36%.</p>
+                            <p>Инструменты: eNPS, HR-planning, SOP, Cashflow, P&L, ROI.</p>
+                        </div>
+                    </div>
+                    <div class="tm-extra">
+                        <a href="https://onurcompany.com/" target="_blank" class="tm-logo">
+                            <img src="onur.png" alt="ONUR" onerror="this.src='https://ui-avatars.com/api/?name=ONUR&background=0F1D35&color=B8935A'">
+                        </a>
+                        <a href="https://onurcompany.com/" target="_blank" class="tm-link" data-i18n="website_label">Website</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tm-content">
+                        <div class="tm-date" data-i18n="exp_2_date">Январь 2024 — Февраль 2025</div>
+                        <div class="tm-company">Marva</div>
+                        <div class="tm-role" data-i18n="exp_2_role">Executive Director (CEO)</div>
+                        <div class="tm-desc" data-i18n="exp_2_desc">
+                            <p>Создание SOP с нуля, стратегическое и операционное управление. Повышение эффективности отдела ВЭД с 10% до 70%.</p>
+                        </div>
+                    </div>
+                    <div class="tm-extra">
+                        <a href="https://marva.uz/ru" target="_blank" class="tm-logo">
+                            <img src="marva.png" alt="Marva" onerror="this.src='https://ui-avatars.com/api/?name=Marva&background=0F1D35&color=B8935A'">
+                        </a>
+                        <a href="https://marva.uz/ru" target="_blank" class="tm-link" data-i18n="website_label">Website</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tm-content">
+                        <div class="tm-date" data-i18n="exp_3_date">Январь 2023 — Март 2024</div>
+                        <div class="tm-company">Union</div>
+                        <div class="tm-role" data-i18n="exp_3_role">HRD / COO</div>
+                        <div class="tm-desc" data-i18n="exp_3_desc">
+                            <p>Управление штатом 260+ сотрудников, HR-аудит, восстановление архивной системы и инспекция филиалов.</p>
+                        </div>
+                    </div>
+                    <div class="tm-extra">
+                        <a href="https://union.uz/" target="_blank" class="tm-logo">
+                            <img src="union.png" alt="Union" onerror="this.src='https://ui-avatars.com/api/?name=Union&background=0F1D35&color=B8935A'">
+                        </a>
+                        <a href="https://union.uz/" target="_blank" class="tm-link" data-i18n="website_label">Website</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tm-content">
+                        <div class="tm-date" data-i18n="exp_4_date">Январь 2022 — Январь 2023</div>
+                        <div class="tm-company">PROWEB.UZ</div>
+                        <div class="tm-role" data-i18n="exp_4_role">HR Manager</div>
+                        <div class="tm-desc" data-i18n="exp_4_desc">
+                            <p>Трудоустройство студентов в IT-секторе. Закрытие 120+ вакансий за 6 месяцев.</p>
+                        </div>
+                    </div>
+                    <div class="tm-extra">
+                        <a href="https://proweb.uz/" target="_blank" class="tm-logo">
+                            <img src="proweb.png" alt="PROWEB" onerror="this.src='https://logo.clearbit.com/proweb.uz'">
+                        </a>
+                        <a href="https://proweb.uz/" target="_blank" class="tm-link" data-i18n="website_label">Website</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tm-content">
+                        <div class="tm-date" data-i18n="exp_5_date">Январь 2021 — Январь 2022</div>
+                        <div class="tm-company">Aravan Cargo</div>
+                        <div class="tm-role" data-i18n="exp_5_role">Updater / Dispatch / Supervisor</div>
+                        <div class="tm-desc" data-i18n="exp_5_desc">
+                            <p>Управление логистикой, переговоры с брокерами, решение форс-мажорных ситуаций.</p>
+                        </div>
+                    </div>
+                    <div class="tm-extra">
+                        <a href="https://aravan.net/" target="_blank" class="tm-logo">
+                            <img src="aravan.png" alt="Aravan Cargo" onerror="this.src='https://ui-avatars.com/api/?name=Aravan&background=0F1D35&color=B8935A'">
+                        </a>
+                        <a href="https://aravan.net/" target="_blank" class="tm-link" data-i18n="website_label">Website</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tm-content">
+                        <div class="tm-date" data-i18n="exp_6_date">Январь 2020 — Январь 2021</div>
+                        <div class="tm-company">TexArenda / Telekontakt</div>
+                        <div class="tm-role" data-i18n="exp_6_role">Ассистент руководителя</div>
+                        <div class="tm-desc" data-i18n="exp_6_desc">
+                            <p>Опыт в продажах, логистике и B2B. Развитие навыков управления и финансовой грамотности.</p>
+                        </div>
+                    </div>
+                    <div class="tm-extra">
+                        <a href="https://texarenda.uz/" target="_blank" class="tm-logo">
+                            <img src="texarenda.png" alt="TexArenda" onerror="this.src='https://ui-avatars.com/api/?name=TX&background=0F1D35&color=B8935A'">
+                        </a>
+                        <a href="https://texarenda.uz/" target="_blank" class="tm-link" data-i18n="website_label">Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SKILLS CLOUD ═══ -->
+    <section class="section" id="skills" style="padding-top:0;">
+        <div class="section-inner">
+            <div class="reveal">
+                <div class="section-label" data-i18n="skills_label">Компетенции</div>
+                <h2 class="section-title" data-i18n="skills_title">Профессиональные <em>навыки</em></h2>
+            </div>
+            <div class="lang-grid reveal reveal-delay-1">
+                <div class="lang-tag" data-i18n="skill_1">Оптимизация бизнес-процессов</div>
+                <div class="lang-tag" data-i18n="skill_2">Стратегический менеджмент</div>
+                <div class="lang-tag" data-i18n="skill_3">Управление командой</div>
+                <div class="lang-tag" data-i18n="skill_4">Бюджетирование</div>
+                <div class="lang-tag" data-i18n="skill_5">Управление финансами</div>
+                <div class="lang-tag" data-i18n="skill_6">HRM</div>
+                <div class="lang-tag" data-i18n="skill_7">Бизнес-анализ</div>
+                <div class="lang-tag" data-i18n="skill_8">Стратегическое планирование</div>
+                <div class="lang-tag" data-i18n="skill_9">SOP & Регламенты</div>
+                <div class="lang-tag" data-i18n="skill_10">AI Integration</div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══ SERVICES ═══ -->
+    <section class="section services-bg" id="services">
+        <div class="section-inner">
+            <div class="reveal">
+                <div class="section-label" style="color:var(--gold-light);" data-i18n="srv_label">Услуги</div>
+                <h2 class="section-title" style="color:#F5F0E8;margin-bottom:40px;" data-i18n="srv_title">
+                    Что вы получите<br><em style="color:var(--gold-light);">при сотрудничестве</em>
+                </h2>
+            </div>
+
+            <div class="services-tabs reveal reveal-delay-1">
+                <button class="tab-btn active" onclick="showTab('owner', this)" data-i18n="srv_tab_1">Для владельца
+          бизнеса</button>
+                <button class="tab-btn" onclick="showTab('ceo', this)" data-i18n="srv_tab_2">Для CEO / Управленца</button>
+            </div>
+
+            <!-- TAB: Owner -->
+            <div class="tab-content active" id="tab-owner">
+                <div class="service-card reveal">
+                    <div class="service-num">01</div>
+                    <div class="service-icon">🔍</div>
+                    <div class="service-title" data-i18n="srv_o_1_title">Полный аудит и выявление точек роста</div>
+                    <div class="service-desc" data-i18n="srv_o_1_desc">Детальный анализ всех процессов бизнеса — от финансов до операций. Выявляем скрытый потенциал и устраняем узкие места, которые тормозят рост.</div>
+                </div>
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-num">02</div>
+                    <div class="service-icon">⚡</div>
+                    <div class="service-title" data-i18n="srv_o_2_title">Устранение неполадок в системе/Создание команды</div>
+                    <div class="service-desc" data-i18n="srv_o_2_desc">Разработка и внедрение конкретных решений по итогам аудита. Быстрое и эффективное исправление системных ошибок в вашем бизнесе.</div>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-num">03</div>
+                    <div class="service-icon">🤖</div>
+                    <div class="service-title" data-i18n="srv_o_3_title">ИИ-оптимизация и автоматизация</div>
+                    <div class="service-desc" data-i18n="srv_o_3_desc">Внедрение передовых AI-инструментов для автоматизации рутинных задач, оптимизации ресурсов и масштабирования бизнеса без лишних затрат.</div>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-num">04</div>
+                    <div class="service-icon">📊</div>
+                    <div class="service-title" data-i18n="srv_o_4_title">Трекинг-дашборд для полного контроля</div>
+                    <div class="service-desc" data-i18n="srv_o_4_desc">Создание понятного и информативного дашборда, интегрированного в каждый отдел. Полная прозрачность и реальный контроль над всеми процессами в реальном времени.
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB: CEO -->
+            <div class="tab-content" id="tab-ceo">
+                <div class="service-card reveal">
+                    <div class="service-num">01</div>
+                    <div class="service-icon">🏢</div>
+                    <div class="service-title" data-i18n="srv_c_1_title">Комплексный аудит системы управления</div>
+                    <div class="service-desc" data-i18n="srv_c_1_desc">Полная диагностика продаж, финансов и команд. Выявление и устранение системных проблем в управлении для повышения эффективности компании.</div>
+                </div>
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-num">02</div>
+                    <div class="service-icon">🤝</div>
+                    <div class="service-title" data-i18n="srv_c_2_title">Лояльность команды и синхронность целей</div>
+                    <div class="service-desc" data-i18n="srv_c_2_desc">Выстраивание сильной корпоративной культуры, повышение вовлечённости сотрудников и выравнивание личных целей команды с целями компании.</div>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-num">03</div>
+                    <div class="service-icon">🎯</div>
+                    <div class="service-title" data-i18n="srv_c_3_title">SMART-цели и их достижение</div>
+                    <div class="service-desc" data-i18n="srv_c_3_desc">Разработка чётких, измеримых бизнес-целей по методологии SMART. Построение системы контроля и достижения поставленных задач в срок.</div>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-num">04</div>
+                    <div class="service-icon">📈</div>
+                    <div class="service-title" data-i18n="srv_c_4_title">Обучение и развитие всей команды</div>
+                    <div class="service-desc" data-i18n="srv_c_4_desc">Комплексные программы обучения для сотрудников всех уровней — от линейного персонала до СEO. Рост компетенций как конкурентное преимущество.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ COMMUNITY ═══ -->
+    <section class="community-section" id="community">
+        <div class="community-inner">
+            <div class="community-visual reveal">
+                <div class="comm-card comm-main">
+                    <div class="comm-tag" data-i18n="comm_label">Сообщество</div>
+                    <div class="cm-title" data-i18n="comm_title">Нетворкинг с амбициозными людьми</div>
+                    <div class="cm-desc" data-i18n="comm_desc">Объединяю предпринимателей, управленцев и визионеров для обмена опытом, знаниями и возможностями</div>
+                </div>
+                <div class="comm-card comm-sub1">
+                    <div class="comm-icon">&#x1F91D;</div>
+                    <div class="comm-label" data-i18n="comm_s1_lbl">Сотрудничество</div>
+                    <div class="comm-val">12+</div>
+                </div>
+                <div class="comm-card comm-sub2">
+                    <div class="comm-icon">&#x1F4C8;</div>
+                    <div class="comm-label" data-i18n="comm_s2_lbl">Рост</div>
+                    <div class="comm-val" data-i18n="comm_s2_val">35%-85%</div>
+                </div>
+            </div>
+            <div class="community-text reveal reveal-delay-2">
+                <div class="section-label" data-i18n="comm_label">Сообщество</div>
+                <h2 class="section-title" data-i18n="comm_h">Станьте частью<br><em>сильной сети</em></h2>
+                <p data-i18n="comm_p">
+                    Цель сайта - создать пространство, где амбициозные люди находят единомышленников, обмениваются опытом и вместе растут. Сотрудничая со мной, вы можете получить доступ к данным сообществам:
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="comm_f1">Доступ к закрытой сети предпринимателей и топ-менеджеров</li>
+                    <li data-i18n="comm_f2">Регулярные встречи и нетворкинг-мероприятия</li>
+                    <li data-i18n="comm_f3">Обмен опытом, контактами и бизнес-возможностями</li>
+                    <li data-i18n="comm_f4">Совместные проекты и партнёрства внутри сообщества</li>
+                    <li data-i18n="comm_f5">Поддержка и мотивация от людей, разделяющих ваши ценности</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact-section" id="contact">
+        <div class="contact-inner">
+            <div class="contact-text reveal">
+                <div class="section-label" data-i18n="cont_label">Контакты</div>
+                <h2 class="big-cta" data-i18n="cont_h">Готовы<br>начать<br><em>рост?</em></h2>
+                <p data-i18n="cont_p">
+                    Опишите свою деятельность — и мы проведём первичное телефонное интервью, чтобы понять, как именно я могу помочь вашему бизнесу.
+                </p>
+            </div>
+            <div class="contact-cards reveal reveal-delay-2">
+                <a href="tel:+998879519889" class="contact-card">
+                    <div class="cc-icon">📞</div>
+                    <div class="cc-info">
+                        <div class="cc-type" data-i18n="cont_c1_type">Телефон (Afzal aloqa usuli)</div>
+                        <div class="cc-val">+998 (87) 951 98 89</div>
+                    </div>
+                    <div class="cc-arrow">→</div>
+                </a>
+                <a href="https://t.me/Jasur_Khidoyatov" target="_blank" class="contact-card">
+                    <div class="cc-icon">✈️</div>
+                    <div class="cc-info">
+                        <div class="cc-type">Telegram</div>
+                        <div class="cc-val">@Jasur_Khidoyatov</div>
+                    </div>
+                    <div class="cc-arrow">→</div>
+                </a>
+                <a href="mailto:hidoyatov.jasur.98@gmail.com" class="contact-card">
+                    <div class="cc-icon">✉️</div>
+                    <div class="cc-info">
+                        <div class="cc-type">Gmail</div>
+                        <div class="cc-val">hidoyatov.jasur.98@gmail.com</div>
+                    </div>
+                    <div class="cc-arrow">→</div>
+                </a>
+                <a href="https://share.google/33iPyFbZto5bW5vqX" target="_blank" class="contact-card">
+                    <div class="cc-icon">📍</div>
+                    <div class="cc-info">
+                        <div class="cc-type" data-i18n="cont_c4_type">Локация</div>
+                        <div class="cc-val" data-i18n="cont_c4_val">SAMPI Mall, Bogishamol St 25, Tashkent</div>
+                    </div>
+                    <div class="cc-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+        <a href="#" class="logo"><span data-i18n="footer_logo">Khidoyatov</span><span>.</span></a>
+        <p data-i18n="footer_copy">© 2026 Все права защищены.</p>
+    </footer>
+
+
+    <script>
+        // ── Translation System
+        const translations = {
+            ru: {
+                nav_profile: "Профиль",
+                nav_experience: "Опыт",
+                nav_services: "Услуги",
+                nav_community: "Сообщество",
+                nav_contact: "Контакты",
+                hero_tag: "CEO | COO | Business Strategist",
+                hero_name_1: "Хидоятов Жасур",
+                hero_name_2: "",
+                hero_subtitle: "Масштабирую бизнес. Проектирую будущее.",
+                hero_desc: "Операционный директор COO и CEO с опытом масштабирования компаний до 36%. Специализируюсь на создании систем управления, автоматизации процессов и развитии корпоративной культуры.",
+                hero_btn_1: "Начать сотрудничество",
+                hero_btn_2: "Опыт работы",
+                stat_1: "Лет опыта",
+                stat_2: "Проектов",
+                stat_3: "Партнёров",
+                stat_4: "Сотрудников",
+                about_label: "Профиль",
+                about_title: "Личные данные и <em>образование</em>",
+                info_1_lbl: "Дата рождения",
+                info_1_val: "18 декабря 1998 (27 лет)",
+                info_2_lbl: "Гражданство",
+                info_2_val: "Узбекистан (Разрешение: RU, USA)",
+                info_3_lbl: "Локация",
+                info_3_val: "Ташкент (SAMPI Mall)",
+                info_4_lbl: "Дополнительно",
+                info_4_val: "Своё авто, права кат. B",
+                info_5_lbl: "Статус",
+                info_5_val: "Полная занятость, Гибрид",
+                info_6_lbl: "Желаемая позиция",
+                info_6_val: "Operatsion direktor COO",
+                edu_label: "Образование",
+                edu_1_inst: "ГКУз (GKUz)",
+                edu_1_role: "Бакалавр, Классическая музыка, оркестрант",
+                edu_2_inst: "Лицей им. Успенского",
+                edu_2_role: "Среднее специальное образование",
+                edu_3_inst: "Школа им. Успенского",
+                edu_3_role: "Среднее образование",
+                lang_label: "Языки",
+                lang_1: "Uzbek",
+                lang_1_lvl: "Native",
+                lang_2: "Russian",
+                lang_2_lvl: "C2",
+                lang_3: "English",
+                lang_3_lvl: "B2",
+                val_1_title: "Аудит & Диагностика",
+                val_1_desc: "Выявляю точки роста в бизнесе и устраняю неполадки в системе управления (HRM, Бизнес процессы, Финансовая часть)",
+                val_2_title: "Оптимизация бизнеес процессов, и автоматизация с помощью ИИ",
+                val_2_desc: "Автоматизирую процессы с помощью современных AI-инструментов",
+                val_3_title: "Дашборды & Контроль",
+                val_3_desc: "Создаю прозрачные системы отслеживания KPI для каждого отдела",
+                val_4_title: "Создание команды/Развитие команды",
+                val_4_desc: "Повышаю синхронность целей компании и команды от линейного персонала до CEO",
+                exp_label: "Опыт работы",
+                exp_title: "Профессиональный <em>путь</em>",
+                exp_1_date: "Март 2025 — Апрель 2026",
+                exp_1_role: "HRD / COO",
+                exp_1_desc: "<p>Оптимизация бизнес-процессов и улучшение корпоративной культуры. Рост прибыли компании на 36%.</p><p>Инструменты: eNPS, HR-planning, SOP, Cashflow, P&L, ROI.</p>",
+                exp_2_date: "Январь 2024 — Февраль 2025",
+                exp_2_role: "Executive Director (CEO)",
+                exp_2_desc: "<p>Создание SOP с нуля, стратегическое и операционное управление. Повышение эффективности отдела ВЭД с 10% до 70%.</p>",
+                exp_3_date: "Январь 2023 — Март 2024",
+                exp_3_role: "HRD / COO",
+                exp_3_desc: "<p>Управление штатом 260+ сотрудников, HR-аудит, восстановление архивной системы и инспекция филиалов.</p>",
+                exp_4_date: "Январь 2022 — Январь 2023",
+                exp_4_role: "HR Manager",
+                exp_4_desc: "<p>Трудоустройство студентов в IT-секторе. Закрытие 120+ вакансий за 6 месяцев.</p>",
+                exp_5_date: "Январь 2021 — Январь 2022",
+                exp_5_role: "Updater / Dispatch / Supervisor",
+                exp_5_desc: "<p>Управление логистикой, переговоры с брокерами, решение форс-мажорных ситуаций.</p>",
+                exp_6_date: "Январь 2020 — Январь 2021",
+                exp_6_role: "Ассистент руководителя",
+                exp_6_desc: "<p>Опыт в продажах, логистике и B2B. Развитие навыков управления и финансовой грамотности.</p>",
+                skills_label: "Компетенции",
+                skills_title: "Профессиональные <em>навыки</em>",
+                skill_1: "Оптимизация бизнес-процессов",
+                skill_2: "Стратегический менеджмент",
+                skill_3: "Управление командой",
+                skill_4: "Бюджетирование",
+                skill_5: "Управление финансами",
+                skill_6: "HRM",
+                skill_7: "Бизнес-анализ",
+                skill_8: "Стратегическое планирование",
+                skill_9: "SOP & Регламенты",
+                skill_10: "AI Integration",
+                srv_label: "Услуги",
+                srv_title: "Что вы получите<br><em style='color:var(--gold-light);'>при сотрудничестве</em>",
+                srv_tab_1: "Для владельца бизнеса",
+                srv_tab_2: "Для CEO / Управленца",
+                srv_o_1_title: "Полный аудит и выявление точек роста",
+                srv_o_1_desc: "Детальный анализ всех процессов бизнеса — от финансов до операций. Выявляем скрытый потенциал и устраняем узкие места, которые тормозят рост.",
+                srv_o_2_title: "Устранение неполадок в системе/Создание команды",
+                srv_o_2_desc: "Разработка и внедрение конкретных решений по итогам аудита. Быстрое и эффективное исправление системных ошибок в вашем бизнесе.",
+                srv_o_3_title: "ИИ-оптимизация и автоматизация",
+                srv_o_3_desc: "Внедрение передовых AI-инструментов для автоматизации рутинных задач, оптимизации ресурсов и масштабирования бизнеса без лишних затрат.",
+                srv_o_4_title: "Трекинг-дашборд для полного контроля",
+                srv_o_4_desc: "Создание понятного и информативного дашборда, интегрированного в каждый отдел. Полная прозрачность и реальный контроль над всеми процессами в реальном времени.",
+                srv_c_1_title: "Комплексный аудит системы управления",
+                srv_c_1_desc: "Полная диагностика продаж, финансов и команд. Выявление и устранение системных проблем в управлении для повышения эффективности компании.",
+                srv_c_2_title: "Лояльность команды и синхронность целей",
+                srv_c_2_desc: "Выстраивание сильной корпоративной культуры, повышение вовлечённости сотрудников и выравнивание личных целей команды с целями компании.",
+                srv_c_3_title: "SMART-цели и их достижение",
+                srv_c_3_desc: "Разработка чётких, измеримых бизнес-целей по методологии SMART. Построение системы контроля и достижения поставленных задач в срок.",
+                srv_c_4_title: "Обучение и развитие всей команды",
+                srv_c_4_desc: "Комплексные программы обучения для сотрудников всех уровней — от линейного персонала до СEO. Рост компетенций как конкурентное преимущество.",
+                comm_label: "Сообщество",
+                comm_title: "Нетворкинг с амбициозными людьми",
+                comm_desc: "Объединяю предпринимателей, управленцев и визионеров для обмена опытом, знаниями и возможностями",
+                comm_s1_lbl: "Сотрудничество",
+                comm_s2_lbl: "Рост",
+                comm_s2_val: "35%-85%",
+                comm_h: "Станьте частью<br><em>сильной сети</em>",
+                comm_p: "Цель сайта — создать пространство, где амбициозные люди находят единомышленников, обмениваются опытом и вместе растут. Сотрудничая со мной, вы можете получить доступ к данным сообществам: ",
+                comm_f1: "Доступ к закрытой сети предпринимателей и топ-менеджеров",
+                comm_f2: "Регулярные встречи и нетворкинг-мероприятия",
+                comm_f3: "Обмен опытом, контактами и бизнес-возможностями",
+                comm_f4: "Совместные проекты и партнёрства внутри сообщества",
+                comm_f5: "Поддержка и мотивация от людей, разделяющих ваши ценности",
+                cont_label: "Контакты",
+                cont_h: "Готовы<br>начать<br><em>рост?</em>",
+                cont_p: "Опишите свою деятельность — и мы проведём первичное телефонное интервью, чтобы понять, как именно я могу помочь вашему бизнесу.",
+                cont_c1_type: "Телефон (Afzal aloqa usuli)",
+                cont_c4_type: "Локация",
+                cont_c4_val: "SAMPI Mall, Bogishamol St 25, Tashkent",
+                website_label: "Сайт",
+                footer_logo: "Khidoyatov",
+                footer_copy: "© 2026 Все права защищены."
+            },
+            uz: {
+                nav_profile: "Profil",
+                nav_experience: "Tajriba",
+                nav_services: "Xizmatlar",
+                nav_community: "Jamiyat",
+                nav_contact: "Kontaktlar",
+                hero_tag: "CEO | COO | Biznes Strategi",
+                hero_name_1: "Hidoyatov Jasur",
+                hero_name_2: "",
+                hero_subtitle: "Biznesni kengaytirish. Kelajakni loyihalash.",
+                hero_desc: "Operatsion direktor COO va CEO, kompaniyalarni 36% gacha o'stirish tajribasiga ega. Boshqaruv tizimlarini yaratish, jarayonlarni avtomatlashtirish va korporativ madaniyatni rivojlantirish bo'yicha mutaxassis.",
+                hero_btn_1: "Hamkorlikni boshlash",
+                hero_btn_2: "Ish tajribasi",
+                stat_1: "Yillik tajriba",
+                stat_2: "Loyihalar",
+                stat_3: "Hamkorlar",
+                stat_4: "Xodimlar",
+                about_label: "Profil",
+                about_title: "Shaxsiy ma'lumotlar va <em>ta'lim</em>",
+                info_1_lbl: "Tug'ilgan sana",
+                info_1_val: "18 dekabr 1998 (27 yosh)",
+                info_2_lbl: "Fuqarolik",
+                info_2_val: "O'zbekiston (Ruxsatnoma: RU, USA)",
+                info_3_lbl: "Manzil",
+                info_3_val: "Toshkent (SAMPI Mall)",
+                info_4_lbl: "Qo'shimcha",
+                info_4_val: "Shaxsiy avtomobil, haydovchilik guvohnomasi B",
+                info_5_lbl: "Status",
+                info_5_val: "To'liq bandlik, Gibrid",
+                info_6_lbl: "Kutilayotgan lavozim",
+                info_6_val: "Operatsion direktor COO",
+                edu_label: "Ta'lim",
+                edu_1_inst: "O'zMK (GKUz)",
+                edu_1_role: "Bakalavr, Klassik musiqa, orkestr ijrochisi",
+                edu_2_inst: "Uspenskiy nomidagi litsey",
+                edu_2_role: "O'rta maxsus ta'lim",
+                edu_3_inst: "Uspenskiy nomidagi maktab",
+                edu_3_role: "O'rta ta'lim",
+                lang_label: "Tillar",
+                lang_1: "O'zbek",
+                lang_1_lvl: "Ona tili",
+                lang_2: "Rus",
+                lang_2_lvl: "C2",
+                lang_3: "Ingliz",
+                lang_3_lvl: "B2",
+                val_1_title: "Audit va Diagnostika",
+                val_1_desc: "O'sish nuqtalarini aniqlayman va biznesdagi yashirin muammolarni bartaraf etaman",
+                val_2_title: "Biznes jarayonlarini optimallashtirish va AI yordamida avtomatlashtirish",
+                val_2_desc: "Zamonaviy AI vositalari yordamida jarayonlarni avtomatlashtiraman",
+                val_3_title: "Dashbordlar va Nazorat",
+                val_3_desc: "Har bir bo'lim uchun KPI kuzatishning shaffof tizimlarini yarataman",
+                val_4_title: "Jamoa qurish/Jamoani rivojlantirish",
+                val_4_desc: "Kompaniya va jamoa maqsadlarini CEOdan tortib oddiy xodimgacha muvofiqlashtiraman",
+                exp_label: "Ish tajribasi",
+                exp_title: "Professional <em>yo'l</em>",
+                exp_1_date: "Mart 2025 — Aprel 2026",
+                exp_1_role: "HRD / COO",
+                exp_1_desc: "<p>Biznes jarayonlarni optimallashtirish va korporativ madaniyatni yaxshilash. Kompaniya foydasining 36% ga o'sishi.</p><p>Asboblar: eNPS, HR-planning, SOP, Cashflow, P&L, ROI.</p>",
+                exp_2_date: "Yanvar 2024 — Fevral 2025",
+                exp_2_role: "Ijrochi direktor (CEO)",
+                exp_2_desc: "<p>Noldan SOP yaratish, strategik va operatsion boshqaruv. Tashqi iqtisodiy faoliyat bo'limi samaradorligini 10% dan 70% gacha oshirish.</p>",
+                exp_3_date: "Yanvar 2023 — Mart 2024",
+                exp_3_role: "HRD / COO",
+                exp_3_desc: "<p>260+ xodimdan iborat shtatni boshqarish, HR-audit, arxiv tizimini tiklash va filiallar inspeksiyasi.</p>",
+                exp_4_date: "Yanvar 2022 — Yanvar 2023",
+                exp_4_role: "HR menejer",
+                exp_4_desc: "<p>IT-sektorda talabalarni ishga joylashtirish. 6 oy ichida 120+ vakansiyani yopish.</p>",
+                exp_5_date: "Yanvar 2021 — Yanvar 2022",
+                exp_5_role: "Updater / Dispatch / Supervisor",
+                exp_5_desc: "<p>Logistikani boshqarish, brokerlar bilan muzokaralar, fors-major holatlarini hal qilish.</p>",
+                exp_6_date: "Yanvar 2020 — Yanvar 2021",
+                exp_6_role: "Rahbar yordamchisi",
+                exp_6_desc: "<p>Sotuvlar, logistika va B2B sohasida tajriba. Boshqaruv va moliyaviy savodxonlik ko'nikmalarini rivojlantirish.</p>",
+                skills_label: "Kompetensiyalar",
+                skills_title: "Professional <em>ko'nikmalar</em>",
+                skill_1: "Biznes jarayonlarni optimallashtirish",
+                skill_2: "Strategik menejment",
+                skill_3: "Jamoani boshqarish",
+                skill_4: "Budjetlashtirish",
+                skill_5: "Moliyaviy boshqaruv",
+                skill_6: "HRM",
+                skill_7: "Biznes tahlil",
+                skill_8: "Strategik rejalashtirish",
+                skill_9: "SOP va Reglamentlar",
+                skill_10: "AI integratsiyasi",
+                srv_label: "Xizmatlar",
+                srv_title: "Hamkorlikdan<br><em style='color:var(--gold-light);'>nima olasiz?</em>",
+                srv_tab_1: "Biznes egasi uchun",
+                srv_tab_2: "CEO / Rahbar uchun",
+                srv_o_1_title: "To'liq audit va o'sish nuqtalari",
+                srv_o_1_desc: "Biznesning barcha jarayonlarini - moliyadan tortib operatsiyalargacha batafsil tahlil qilish. Yashirin salohiyatni aniqlaymiz va o'sishni sekinlashtiradigan to'siqlarni bartaraf etamiz.",
+                srv_o_2_title: "Tizimdagi nosozliklarni bartaraf etish / Jamoa yaratish",
+                srv_o_2_desc: "Audit natijalari bo'yicha aniq echimlarni ishlab chiqish va joriy etish. Biznesingizdagi tizimli xatolarni tez va samarali tuzatish.",
+                srv_o_3_title: "AI-optimallashtirish va avtomatlashtirish",
+                srv_o_3_desc: "Muntazam vazifalarni avtomatlashtirish, resurslarni optimallashtirish va biznesni ortiqcha xarajatlarsiz kengaytirish uchun ilg'or AI vositalarini joriy etish.",
+                srv_o_4_title: "To'liq nazorat uchun kuzatuv dashbordi",
+                srv_o_4_desc: "Har bir bo'limga integratsiyalashgan tushunarli va informatsion dashbord yaratish. Barcha jarayonlar ustidan to'liq shaffoflik va real vaqt rejimida nazorat.",
+                srv_c_1_title: "Boshqaruv tizimining kompleks auditi",
+                srv_c_1_desc: "Sotuvlar, moliya va jamoalarni to'liq diagnostika qilish. Kompaniya samaradorligini oshirish uchun boshqaruvdagi tizimli muammolarni aniqlash va bartaraf etish.",
+                srv_c_2_title: "Jamoa sadoqati va maqsadlar muvofiqligi",
+                srv_c_2_desc: "Kuchli korporativ madaniyatni shakllantirish, xodimlarning ishtirokini oshirish va jamoaning shaxsiy maqsadlarini kompaniya maqsadlari bilan tenglashtirish.",
+                srv_c_3_title: "SMART-maqsadlar va ularga erishish",
+                srv_c_3_desc: "SMART metodologiyasi bo'yicha aniq, o'lchanadigan biznes maqsadlarini ishlab chiqish. Belgilangan vazifalarni o'z vaqtida bajarish va nazorat qilish tizimini qurish.",
+                srv_c_4_title: "Butun jamoani o'qitish va rivojlantirish",
+                srv_c_4_desc: "Barcha darajadagi xodimlar uchun - oddiy xodimlardan tortib CEOgacha kompleks o'quv dasturlari. Kompetensiyalarning o'sishi raqobatdosh ustunlik sifatida.",
+                comm_label: "Jamiyat",
+                comm_title: "Ambitsiyali insonlar bilan netvorking",
+                comm_desc: "Tajriba, bilim va imkoniyatlar bilan almashish uchun tadbirkorlar, rahbarlar va vizionerlarni birlashtiraman",
+                comm_s1_lbl: "Hamkorlik",
+                comm_s2_lbl: "O'sish",
+                comm_s2_val: "35%-85%",
+                comm_h: "Kuchli tarmoqning<br><em>bir qismiga aylaning</em>",
+                comm_p: "Mening asosiy maqsadim — ambitsiyali odamlar uchun o'zaro tajriba almashadigan, birga o'sadigan va bir-birini qo'llaydigan makon yaratishdir. Mening bilan hamkorlik qilganingizda, siz ham ushbu jamiyatning to'liq a'zosi bo'lasiz.",
+                comm_f1: "Tadbirkorlar va top-menejerlarning yopiq tarmog'iga kirish",
+                comm_f2: "Muntazam uchrashuvlar va netvorking tadbirlari",
+                comm_f3: "Tajriba, kontaktlar va biznes imkoniyatlari bilan almashish",
+                comm_f4: "Jamiyat ichida qo'shma loyihalar va hamkorliklar",
+                comm_f5: "Sizning qadriyatlaringizni baham ko'radigan insonlardan qo'llab-quvvatlash va motivatsiya",
+                cont_label: "Kontaktlar",
+                cont_h: "O'sishni boshlashga<br><em>tayyormisiz?</em>",
+                cont_p: "Faoliyatingizni tasvirlab bering — va biz sizning biznesingizga qanday yordam berishim mumkinligini tushunish uchun dastlabki telefon intervyusini o'tkazamiz.",
+                cont_c1_type: "Telefon (Afzal aloqa usuli)",
+                cont_c4_type: "Manzil",
+                cont_c4_val: "SAMPI Mall, Bog'ishamol ko'chasi 25, Toshkent",
+                website_label: "Sayt",
+                footer_logo: "Jasur",
+                footer_copy: "© 2026 Hidoyatov Jasur. Barcha huquqlar himoyalangan."
+            },
+            en: {
+                nav_profile: "Profile",
+                nav_experience: "Experience",
+                nav_services: "Services",
+                nav_community: "Community",
+                nav_contact: "Contacts",
+                hero_tag: "CEO | COO | Business Strategist",
+                hero_name_1: "Jasur Khidoyatov",
+                hero_name_2: "",
+                hero_subtitle: "Scaling Businesses. Engineering the Future.",
+                hero_desc: "COO & CEO with a proven track record of scaling companies by up to 36%. Specialist in management systems, process automation, and corporate culture development.",
+                hero_btn_1: "Start Collaboration",
+                hero_btn_2: "Work Experience",
+                stat_1: "Years of Exp",
+                stat_2: "Projects",
+                stat_3: "Partners",
+                stat_4: "Employees",
+                about_label: "Profile",
+                about_title: "Personal Data & <em>Education</em>",
+                info_1_lbl: "Date of Birth",
+                info_1_val: "December 18, 1998 (27 years)",
+                info_2_lbl: "Citizenship",
+                info_2_val: "Uzbekistan (Work Permit: RU, USA)",
+                info_3_lbl: "Location",
+                info_3_val: "Tashkent (SAMPI Mall)",
+                info_4_lbl: "Extras",
+                info_4_val: "Personal vehicle, Driver's license B",
+                info_5_lbl: "Status",
+                info_5_val: "Full-time, Hybrid",
+                info_6_lbl: "Desired Position",
+                info_6_val: "Operations Director COO",
+                edu_label: "Education",
+                edu_1_inst: "SCUz (GKUz)",
+                edu_1_role: "Bachelor, Classical Music, Orchestra Performer",
+                edu_2_inst: "Uspensky Lyceum",
+                edu_2_role: "Secondary Vocational Education",
+                edu_3_inst: "Uspensky School",
+                edu_3_role: "Secondary Education",
+                lang_label: "Languages",
+                lang_1: "Uzbek",
+                lang_1_lvl: "Native",
+                lang_2: "Russian",
+                lang_2_lvl: "C2",
+                lang_3: "English",
+                lang_3_lvl: "B2",
+                val_1_title: "Audit & Diagnostics",
+                val_1_desc: "Identifying growth points and eliminating hidden bottlenecks in business",
+                val_2_title: "Business process optimization and AI-powered automation",
+                val_2_desc: "Automating processes using cutting-edge AI tools",
+                val_3_title: "Dashboards & Tracking",
+                val_3_desc: "Creating transparent KPI tracking systems for every department",
+                val_4_title: "Team building/Team development",
+                val_4_desc: "Aligning company goals with the team from CEO to frontline staff",
+                exp_label: "Experience",
+                exp_title: "Professional <em>Path</em>",
+                exp_1_date: "March 2025 — April 2026",
+                exp_1_role: "HRD / COO",
+                exp_1_desc: "<p>Optimization of business processes and improvement of corporate culture. Company profit growth by 36%.</p><p>Tools: eNPS, HR-planning, SOP, Cashflow, P&L, ROI.</p>",
+                exp_2_date: "January 2024 — February 2025",
+                exp_2_role: "Executive Director (CEO)",
+                exp_2_desc: "<p>Creating SOPs from scratch, strategic and operational management. Increasing Foreign Economic Activity department efficiency from 10% to 70%.</p>",
+                exp_3_date: "January 2023 — March 2024",
+                exp_3_role: "HRD / COO",
+                exp_3_desc: "<p>Managing a staff of 260+ employees, HR auditing, restoring archive systems, and branch inspections.</p>",
+                exp_4_date: "January 2022 — January 2023",
+                exp_4_role: "HR Manager",
+                exp_4_desc: "<p>Employing students in the IT sector. Closing 120+ vacancies in 6 months.</p>",
+                exp_5_date: "January 2021 — January 2022",
+                exp_5_role: "Updater / Dispatch / Supervisor",
+                exp_5_desc: "<p>Logistics management, negotiations with brokers, resolving emergency situations.</p>",
+                exp_6_date: "January 2020 — January 2021",
+                exp_6_role: "Assistant to the Executive",
+                exp_6_desc: "<p>Experience in sales, logistics, and B2B. Developing management and financial literacy skills.</p>",
+                skills_label: "Competencies",
+                skills_title: "Professional <em>Skills</em>",
+                skill_1: "Business Process Optimization",
+                skill_2: "Strategic Management",
+                skill_3: "Team Management",
+                skill_4: "Budgeting",
+                skill_5: "Financial Management",
+                skill_6: "HRM",
+                skill_7: "Business Analysis",
+                skill_8: "Strategic Planning",
+                skill_9: "SOP & Regulations",
+                skill_10: "AI Integration",
+                srv_label: "Services",
+                srv_title: "What you get<br><em style='color:var(--gold-light);'>through collaboration</em>",
+                srv_tab_1: "For Business Owners",
+                srv_tab_2: "For CEOs / Executives",
+                srv_o_1_title: "Full Audit & Growth Points",
+                srv_o_1_desc: "Detailed analysis of all business processes — from finance to operations. Identifying hidden potential and eliminating bottlenecks that hinder growth.",
+                srv_o_2_title: "System Troubleshooting / Team Building",
+                srv_o_2_desc: "Development and implementation of specific solutions based on audit results. Fast and effective correction of systemic errors in your business.",
+                srv_o_3_title: "AI Optimization & Automation",
+                srv_o_3_desc: "Implementing advanced AI tools to automate routine tasks, optimize resources, and scale the business without unnecessary costs.",
+                srv_o_4_title: "Tracking Dashboard for Full Control",
+                srv_o_4_desc: "Creating a clear and informative dashboard integrated into every department. Full transparency and real-time control over all processes.",
+                srv_c_1_title: "Comprehensive Management Audit",
+                srv_c_1_desc: "Full diagnostics of sales, finance, and teams. Identifying and eliminating systemic management problems to increase company efficiency.",
+                srv_c_2_title: "Team Loyalty & Goal Alignment",
+                srv_c_2_desc: "Building a strong corporate culture, increasing employee engagement, and aligning team goals with company objectives.",
+                srv_c_3_title: "SMART Goals & Achievement",
+                srv_c_3_desc: "Developing clear, measurable business goals using SMART methodology. Building a system for controlling and achieving tasks on time.",
+                srv_c_4_title: "Training & Team building/Team development",
+                srv_c_4_desc: "Comprehensive training programs for employees at all levels — from frontline staff to CEO. Competency growth as a competitive advantage.",
+                comm_label: "Community",
+                comm_title: "Networking with Ambitious People",
+                comm_desc: "Connecting entrepreneurs, managers, and visionaries to exchange experience, knowledge, and opportunities",
+                comm_s1_lbl: "Partnerships",
+                comm_s2_lbl: "Growth",
+                comm_s2_val: "35%-85%",
+                comm_h: "Become part of a<br><em>strong network</em>",
+                comm_p: "My main goal is to create a space where ambitious people find like-minded peers, exchange experiences, and grow together. By collaborating with me, you automatically become a member of this community.",
+                comm_f1: "Access to a closed network of entrepreneurs and top managers",
+                comm_f2: "Regular meetings and networking events",
+                comm_f3: "Exchange of experience, contacts, and business opportunities",
+                comm_f4: "Joint projects and partnerships within the community",
+                comm_f5: "Support and motivation from people who share your values",
+                cont_label: "Contacts",
+                cont_h: "Ready to<br>start<br><em>growing?</em>",
+                cont_p: "Describe your activity — and we will conduct a preliminary phone interview to understand exactly how I can help your business.",
+                cont_c1_type: "Phone (Preferred contact method)",
+                cont_c4_type: "Location",
+                cont_c4_val: "SAMPI Mall, Bogishamol St 25, Tashkent",
+                website_label: "Website",
+                footer_logo: "Jasur",
+                footer_copy: "© 2026 Jasur Hidoyatov. All rights reserved."
+            }
+        };
+
+        function changeLang(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            // Update current lang UI
+            const flags = {
+                ru: 'ru',
+                uz: 'uz',
+                en: 'us'
+            };
+            const labels = {
+                ru: 'RU',
+                uz: 'UZ',
+                en: 'EN'
+            };
+            document.getElementById('langCurrent').querySelector('img').src = `https://flagcdn.com/w40/${flags[lang]}.png`;
+            document.getElementById('langCurrent').querySelector('span').textContent = labels[lang];
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        // Load preferred lang
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLang') || 'ru';
+            changeLang(savedLang);
+        });
+
+        // ── Scroll progress
+        window.addEventListener('scroll', () => {
+            const s = document.documentElement,
+                total = s.scrollHeight - s.clientHeight,
+                pct = (s.scrollTop / total) * 100;
+            document.getElementById('progressBar').style.width = pct + '%';
+            const nav = document.getElementById('topnav');
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // ── Reveal on scroll
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -40px 0px'
+        });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+        // ── 3D card tilt
+        document.querySelectorAll('.service-card,.value-card,.contact-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const r = card.getBoundingClientRect();
+                const x = ((e.clientX - r.left) / r.width - 0.5) * 14;
+                const y = -((e.clientY - r.top) / r.height - 0.5) * 14;
+                card.style.transform = `perspective(600px) rotateY(${x}deg) rotateX(${y}deg) translateY(-6px)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // ── Photo card parallax
+        const photoCard = document.getElementById('photoCard');
+        document.addEventListener('mousemove', e => {
+            if (!photoCard) return;
+            const rx = (e.clientX / window.innerWidth - 0.5) * 10;
+            const ry = (e.clientY / window.innerHeight - 0.5) * -8;
+            photoCard.style.transform = `perspective(800px) rotateY(${rx}deg) rotateX(${ry}deg)`;
+        });
+
+        // ── Tab switching
+        function showTab(id, btn) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('tab-' + id).classList.add('active');
+            btn.classList.add('active');
+            // re-trigger reveals
+            document.querySelectorAll('#tab-' + id + ' .reveal').forEach(el => {
+                el.classList.remove('visible');
+                setTimeout(() => el.classList.add('visible'), 50);
+            });
+        }
+
+        // ── Counter animation
+        function animateCounter(el, target, suffix = '') {
+            let start = 0;
+            const dur = 2000;
+            const step = 16;
+            const inc = target / (dur / step);
+            const timer = setInterval(() => {
+                start += inc;
+                if (start >= target) {
+                    start = target;
+                    clearInterval(timer);
+                }
+                el.textContent = Math.floor(start) + (suffix || '');
+            }, step);
+        }
+        const counterObs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const n = e.target.querySelector('.stat-num');
+                    if (n && !n.dataset.animated) {
+                        n.dataset.animated = '1';
+                        const val = parseInt(n.textContent);
+                        const suffix = n.textContent.includes('+') ? '+' : '';
+                        if (!isNaN(val)) animateCounter(n, val, suffix);
+                    }
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+        document.querySelectorAll('.stat-item').forEach(i => counterObs.observe(i));
+    </script>
+</body>
+
+</html>
